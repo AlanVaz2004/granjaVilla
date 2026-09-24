@@ -12,6 +12,9 @@ program farmville {
 	//  VISUALES
  	game.addVisualCharacter(hector)
  	game.addVisual(new Maiz()) // Se agrega a modo de prueba
+
+	//Teclas
+	keyboard.m().onPressDo({ hector.planta(new Maiz()) })
  	
  	//  COMIENZA
 	game.start()
