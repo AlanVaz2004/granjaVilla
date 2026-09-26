@@ -18,7 +18,10 @@ class Trigo {
 	var etapaEvolutiva = 0
 
 	method image() {
-		return "wheat_0.png"
+		return if (etapaEvolutiva == 1) "wheat_1.png" 
+		else if (etapaEvolutiva == 2) "wheat_2.png"
+		else if (etapaEvolutiva == 3) "wheat_3.png"
+		else "wheat_0.png"
 	}
 
 	method regate(){
