@@ -25,6 +25,10 @@ class Trigo {
 	}
 
 	method regate(){
-		etapaEvolutiva = etapaEvolutiva + 1
+		if(etapaEvolutiva < 3){
+			etapaEvolutiva = etapaEvolutiva + 1
+		} else {
+			etapaEvolutiva = 0
+		}
 	}
 }
