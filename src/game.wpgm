@@ -15,6 +15,7 @@ program farmville {
 	//TECLAS
 	keyboard.m().onPressDo({ hector.plantaMaiz() })
 	keyboard.t().onPressDo({ hector.plantaTrigo() })
+	keyboard.o().onPressDo({ hector.plantaTomaco() })
 	keyboard.r().onPressDo({ hector.rega() })
 
  	//  COMIENZA

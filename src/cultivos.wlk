@@ -32,3 +32,15 @@ class Trigo {
 		}
 	}
 }
+
+class Tomaco {
+	const property position
+
+	method image() {
+		return "tomaco.png"
+	}
+
+	method regate() {
+		//Se mueve a la celda de arriba. Si ya está en el borde de arriba pasa abajo de todo
+	}
+}
