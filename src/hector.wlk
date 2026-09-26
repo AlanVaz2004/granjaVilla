@@ -1,4 +1,5 @@
 import cultivos.Maiz 
+import cultivos.Trigo
 import wollok.game.*
 
 object hector {
@@ -8,6 +9,11 @@ object hector {
 	method plantaMaiz() {
 		self.validarPosicionVacia()
 		game.addVisual(new Maiz(position = self.position()))
+	}
+
+	method plantaTrigo(){
+		self.validarPosicionVacia()
+		game.addVisual(new Trigo(position = self.position() ) )
 	}
 
 	method rega() {

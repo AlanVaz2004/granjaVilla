@@ -12,3 +12,16 @@ class Maiz {
 		esAdulta = true
 	}
 }
+
+class Trigo {
+	const property position
+	var etapaEvolutiva = 0
+
+	method image() {
+		return "wheat_0.png"
+	}
+
+	method regate(){
+		etapaEvolutiva = etapaEvolutiva + 1
+	}
+}
