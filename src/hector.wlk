@@ -8,7 +8,7 @@ object hector {
 
 	method plantaMaiz() {
 		self.validarPosicionVacia()
-		game.addVisual(new Maiz(position = self.position()))
+		game.addVisual(new Maiz(position = self.position())) 
 	}
 
 	method plantaTrigo(){
@@ -17,6 +17,7 @@ object hector {
 	}
 
 	method rega() {
+		self.validarPosicionSinCultivo()
 		self.cultivosDebajo().forEach({ cultivo => cultivo.regate() })
 	}
 
@@ -25,6 +26,12 @@ object hector {
 	method validarPosicionVacia() {
 		if (not self.cultivosDebajo().isEmpty()) {
 			self.error("Ya hay un cultivo acá!")
+		}
+	}
+
+	method validarPosicionSinCultivo(){
+		if (self.cultivosDebajo().isEmpty()){
+			self.error("No tengo nada para regar")
 		}
 	}
 }
