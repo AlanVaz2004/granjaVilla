@@ -17,6 +17,7 @@ program farmville {
 	keyboard.t().onPressDo({ hector.plantaTrigo() })
 	keyboard.o().onPressDo({ hector.plantaTomaco() })
 	keyboard.r().onPressDo({ hector.rega() })
+	keyboard.c().onPressDo({ hector.cosecha() })
 
  	//  COMIENZA
 	game.start()

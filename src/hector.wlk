@@ -25,6 +25,10 @@ object hector {
 		self.cultivosDebajo().forEach({ cultivo => cultivo.regate() })
 	}
 
+	method cosecha(){
+		
+	}
+
 	method cultivosDebajo() { return game.colliders(self) }
 
 	method validarPosicionVacia() {
